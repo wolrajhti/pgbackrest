@@ -26,8 +26,6 @@ RUN mkdir -p -m 770 /var/log/pgbackrest && \
 # setup demo database cluster
 
   pg_dropcluster 15 main --stop && \
-  pg_createcluster 15 demo && \
-  pg_ctlcluster 15 demo restart && \
 
   # create the repository
 
